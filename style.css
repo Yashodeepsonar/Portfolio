@@ -197,7 +197,7 @@ header {
     box-shadow: var(--hover-shadow);
 }
 
-/* Projects Section */
+
 .projects-section {
     padding: 6rem 2rem;
     background: #f8f9fa;
@@ -279,7 +279,6 @@ header {
     box-shadow: var(--card-shadow);
 }
 
-/* Skills Section */
 .skills-section {
     padding: 6rem 2rem;
     background: var(--gradient-1);
@@ -357,6 +356,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    list-style: none;
 }
 
 .certification-item {
@@ -391,7 +391,7 @@ header {
     color: var(--text-dark);
 }
 
-/* Footer */
+
 .footer {
     background: var(--gradient-1);
     color: var(--text-light);
@@ -502,7 +502,6 @@ header {
     margin: 0;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .nav {
         flex-direction: column;
