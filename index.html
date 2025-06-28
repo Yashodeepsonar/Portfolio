@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website showcasing my projects and skills">
+    <meta name="theme-color" content="#3b4163">
+    <title>Portfolio</title>
+    <link rel="icon" href="./img/icon.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo-container" data-aos="fade-right">
+                <div class="logo-flip">
+                    <div class="logo-front">
+                        <img class="logo" src="./img/logo.png" alt="Logo">
+                    </div>
+                    <div class="logo-back">
+                        <img class="profile-photo" src="./img/photo1.jpeg" alt="Profile Photo">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-container" data-aos="fade-left">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="./video/video2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my projects and skills</p>
+            <a href="./pdf/resume.pdf" class="btn" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-file-alt"></i> View Resume
+            </a>
+        </div>                   
+    </section>
+    <main>
+        <section id="projects" class="projects-section">
+            <h2 data-aos="fade-up">Projects</h2>
+            <div class="card">
+                <div class="card-content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Delivery Application</h3>
+                    <p>A comprehensive Food Delivery Application built with Java and SQL. Features include order management, inventory tracking.</p>
+                    <div class="project-links">
+                        <a href="https://yashodeepsonar.github.io/TAP/" class="project-btn"><i class="fab fa-github"></i> Overview</a>
+                    </div>
+                </div>
+                <div class="card-content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bank Management System</h3>
+                    <p>A comprehensive banking solution developed using Java and SQL. Implements secure transaction processing, account management, and detailed financial reporting with a responsive web interface.</p>
+                    <div class="project-links">
+                        <a href="https://yashodeepsonar.github.io/Bank-managment-System/" class="project-btn"><i class="fab fa-github"></i> Overview</a>
+                    </div>
+                </div>
+                <div class="card-content" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Text Analysis</h3>
+                    <p>An advanced text analysis tool that processes and analyzes text data using Java. Features include sentiment analysis, keyword extraction, and statistical text analysis with data stored in SQL.</p>
+                    <div class="project-links">
+                        <a href="https://yashodeepsonar.github.io/Text-analysis/" class="project-btn"><i class="fab fa-github"></i> Overview</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 data-aos="fade-up">Known Skills</h2>
+            <div class="skill-card">
+                <div class="skills" data-aos="zoom-in">
+                    <img src="./img/java.png" alt="Java">
+                    <h4>Java</h4>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skills" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./img/database.png" alt="SQL">
+                    <h4>SQL</h4>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skills" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./img/html.png" alt="HTML">
+                    <h4>HTML</h4>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skills" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="./img/css-3.png" alt="CSS">
+                    <h4>CSS</h4>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skills" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="./img/java-script.png" alt="JavaScript">
+                    <h4>JavaScript</h4>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies-section">
+            <h2 data-aos="fade-up">Hobbies</h2>
+            <div class="hobbies-container">
+                <div class="hobby-item" data-aos="fade-up">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>Crafting</h4>
+                </div>
+                <div class="hobby-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-gamepad"></i>
+                    <h4>Gaming</h4>
+                </div>
+                <div class="hobby-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-code"></i>
+                    <h4>Programming</h4>
+                </div>
+                <div class="hobby-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h4>Problem Solving</h4>
+                </div>
+                <div class="hobby-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Cooking</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-content" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>I am a passionate Full Stack Java Developer with expertise in building robust web applications. Currently seeking opportunities as a Software Developer specializing in Java Full Stack Web Development. My strong foundation in both frontend and backend technologies allows me to create efficient, scalable, and user-friendly applications.</p>
+                
+                <h3>Certifications</h3>
+                <ul class="certification-list">
+                    <li class="certification-item" data-aos="fade-up">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Full Stack Web Development</h4>
+                        <p>Tap Academy - Comprehensive training in full stack web development technologies and frameworks</p>
+                        <span class="cert-date">2025</span>
+                    </li>
+                    <li class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Power BI</h4>
+                        <p>Simplilearn - Data visualization and business intelligence using Power BI</p>
+                        <span class="cert-date">2024</span>
+                    </li>
+                    <li class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-cloud"></i>
+                        <h4>DevOps</h4>
+                        <p>Simplilearn - Modern DevOps practices and tools for continuous integration and deployment</p>
+                        <span class="cert-date">2024</span>
+                    </li>
+                    <li class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-git-alt"></i>
+                        <h4>Git and GitHub</h4>
+                        <p>Execelr - Version control and collaborative development using Git and GitHub</p>
+                        <span class="cert-date">2024</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="contact-info">
+            <div class="contact-item" data-aos="fade-up">
+                <i class="fas fa-envelope"></i>
+                <h4>yashodeepsonar3@gmail.com</h4>
+            </div>
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>CBD Belpaur, Navi Mumbai</h4>
+            </div>
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-phone"></i>
+                <h4>+91-9321106113</h4>
+            </div>
+        </div>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://github.com/Yashodeepsonar" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yashodeep-sonar-06b55b2ba/" class="social-btn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/yashodeep_sonar" class="social-btn" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+            <h5>© 2025 All Rights Reserved</h5>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
