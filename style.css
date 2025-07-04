@@ -197,7 +197,7 @@ header {
     box-shadow: var(--hover-shadow);
 }
 
-
+/* Projects Section */
 .projects-section {
     padding: 6rem 2rem;
     background: #f8f9fa;
@@ -279,6 +279,7 @@ header {
     box-shadow: var(--card-shadow);
 }
 
+/* Skills Section */
 .skills-section {
     padding: 6rem 2rem;
     background: var(--gradient-1);
@@ -391,7 +392,7 @@ header {
     color: var(--text-dark);
 }
 
-
+/* Footer */
 .footer {
     background: var(--gradient-1);
     color: var(--text-light);
@@ -502,65 +503,68 @@ header {
     margin: 0;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .nav {
+        padding: 0.5rem;
         flex-direction: column;
-        padding: 1rem;
+        align-items: center;
     }
 
     .nav-links {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .nav-links a {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    .hero {
-        height: 750px;
-        padding-top: 120px;
-    }
-
-    .background-video {
-        height: 750px;
-    }
-
-    .hero::before {
-        height: 750px;
-    }
-
-    .card-content {
-        padding: 1.5rem;
-    }
-
-    .skills {
-        padding: 1.5rem;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
     }
 
     .logo-container {
-        margin-left: 15px;
+        margin-left: 0;
     }
-    
+
     .logo-flip {
         width: 100px;
         height: 100px;
     }
 
+    /* Rest of the mobile styles */
+    .hero {
+        height: 100vh;
+    }
+
+    .background-video {
+        height: 100vh;
+    }
+
+    .hero::before {
+        height: 100vh;
+    }
+
+    .card-content {
+        min-height: 350px;
+    }
+
+    .skills {
+        width: 120px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
     .hobbies-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .hobby-item {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
 
